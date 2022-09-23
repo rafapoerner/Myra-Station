@@ -20,6 +20,7 @@
     "button-type": "off",
     "no-inline-styles": "off",
     "axe/aria": "off",
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "axe/parsing": "off"
   }
 }

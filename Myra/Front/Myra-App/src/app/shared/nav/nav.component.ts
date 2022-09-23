@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AccountService } from '../../services/account.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { AccountService } from '../../services/account.service';
 })
 export class NavComponent implements OnInit {
   isCollapsed = true;
+  @Input() titulo: 'station';
+  @Input() subtitulo = 'performance anywhere';
 
   constructor(
     public accountService: AccountService,

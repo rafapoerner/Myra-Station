@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class TituloComponent implements OnInit {
   @Input() titulo: string;
-  @Input() iconClass = 'fa fa-user';
-  @Input() subtitulo = 'Desde 2022';
+  @Input() iconClass = '';
+  @Input() subtitulo = 'performance anywhere';
   @Input() botaoListar = false;
 
   constructor(private router: Router) { }

@@ -1,24 +1,51 @@
-<div class="card bg-dark position-absolute top-50 start-50 translate-middle" style="width: 18rem">
-  <div class="img">
-    <img src="../assets/myra-branco-logo.png" alt="" />
-  </div>
-  <div class="card-body">
-    <form #loginForm="ngForm" class="form-label" (ngSubmit)="login()">
-      <label for="username" class="text-white">Usuário</label>
-      <input [(ngModel)]="model.userName" type="email" name="username" id="username" class="input-group mb-2 fa-solid fa-user"
-        required />
-      <label for="password" class="text-white">Password</label>
-      <input [(ngModel)]="model.password" type="password" id="password" class="input-group mb-3" placeholder="Senha"
-        name="password" required />
-      <div class="d-grid gap-2 col-12">
-        <button [disabled]="loginForm.invalid" class="btn btn-outline-warning text-white" type="submit">
-
-          Entrar
-        </button>
+<div class="container-xxl">
+  <div class="row">
+    <div class="div1">
+      <div class="row align-items-end">
+        <img class="img2" src="../assets/myra-branco-fix-2.png" alt="" />
+        <div class="col">
+          <div class="a">
+            <h2>station</h2>
+          </div>
+          <small>performance anywhere</small>
+        </div>
       </div>
-      <p class="btn btn-lg text-white ms-3" routerLink="/user/registration">
-        Esqueci minha senha
-      </p>
-    </form>
+      <div class="h1">
+        <h1>
+          perfomance
+          anywhere
+        </h1>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="img">
+        <img src="../assets/logo-telaLogin.jpg" alt="" />
+      </div>
+      <div>
+        <div class="card bg-black position-absolute top-50 start-50 translate-middle" style="width: 18rem">
+          <div class="">
+            <img src="../assets/myra-branco-logo.png" alt="" />
+          </div>
+          <div class="card-body">
+            <form #loginForm="ngForm" class="form-label" (ngSubmit)="login()">
+              <label for="username" class="text-white">Usuário</label>
+              <input [(ngModel)]="model.userName" type="email" name="username" id="username"
+                class="input-group mb-2 fa-solid fa-user" required />
+              <label for="password" class="text-white">Password</label>
+              <input [(ngModel)]="model.password" type="password" id="password" class="input-group mb-3"
+                placeholder="Senha" name="password" required />
+              <div class="d-grid gap-2 col-12">
+                <button [disabled]="loginForm.invalid" class="btn btn-outline-warning text-white" type="submit">
+                  Entrar
+                </button>
+              </div>
+              <p class="text-white ms-2 p-3" routerLink="/user/registration">
+                Esqueci minha senha
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
