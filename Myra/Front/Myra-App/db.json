@@ -1,0 +1,60 @@
+{
+  "users": [{
+      "id": 1,
+      "name": "Rafa",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 1,
+      "name": "Rafa",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Diego",
+      "username": "diego",
+      "password": "admin"
+    },
+    {
+      "id": 3,
+      "name": "Herverton",
+      "username": "herverton",
+      "password": "admin"
+    }
+  ],
+
+  "employees": [
+    {
+      "image": "user1.jpg",
+      "name": "Douglas",
+      "office": "Diretor"
+    },
+    {
+      "image": "user3.jpg",
+      "name": "Heverton",
+      "office": "CEO"
+    },
+    {
+      "image": "user4.jpg",
+      "name": "Juliana",
+      "office": "Diretora-Geral"
+    },
+    {
+      "image": "user5.jpg",
+      "name": "Enzo",
+      "office": "Diretor de Eventos"
+    },
+    {
+      "image": "user6.jpg",
+      "name": "Poliana",
+      "office": "Diretor"
+    },
+    {
+      "image": "user7.jpg",
+      "name": "Théo",
+      "office": "Analista de Desenvolvimento"
+    }
+  ]
+}

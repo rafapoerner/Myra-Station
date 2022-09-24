@@ -21,12 +21,7 @@
   </div>
 
   <div class="station-sidebar-body">
-    <app-card-box-user></app-card-box-user>
-    <app-card-box></app-card-box>
-    <app-card-box></app-card-box>
-    <app-card-box></app-card-box>
-    <app-card-box></app-card-box>
-    <app-card-box></app-card-box>
-    <app-card-box></app-card-box>
+    <app-card-box-user [employee]="employees"></app-card-box-user>
+    <app-card-box *ngFor="let employee of employees" [employee]="employee"></app-card-box>
   </div>
 </div>

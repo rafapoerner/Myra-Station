@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "NCkEA/p5AJ6boPO6Fqo7ljbM4Hq/N1y5nbmbJ8f6MjorEmDFfe2XfQmuPXd2k2tg64k64/v550UxwAnIu//O4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rafa_\\Myra-Station\\Myra-Station.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafa_\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\rafa_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\rafa_\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\rafa_\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\rafa_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\rafa_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

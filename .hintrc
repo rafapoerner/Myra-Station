@@ -3,19 +3,8 @@
     "development"
   ],
   "hints": {
-    "typescript-config/consistent-casing": "off",
     "typescript-config/strict": "off",
-    "axe/forms": "off",
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
-    "button-type": "off",
-    "no-inline-styles": "off",
-    "axe/aria": "off",
-    "axe/name-role-value": "off",
-    "axe/parsing": "off"
+    "typescript-config/consistent-casing": "off",
+    "no-inline-styles": "off"
   }
 }
