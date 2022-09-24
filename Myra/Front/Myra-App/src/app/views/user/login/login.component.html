@@ -21,20 +21,20 @@
           <div class="card-body">
             <form #loginForm="ngForm" class="form-label" (ngSubmit)="login()">
               <label for="username" class="text-white">Usuário</label>
-              <div class="station-login-input" >
+              <div class="station-login-input">
                 <i class="fa-solid fa-user"></i>
-              <input [(ngModel)]="model.userName" type="email" name="username" id="username"
-                class="input-group mb-2" required />
-                </div>
+                <input [(ngModel)]="model.userName" type="email" name="username" id="username" class="input-group mb-2"
+                  required />
+              </div>
               <label for="password" class="text-white">Senha</label>
-              <div class="station-login-input" >
+              <div class="station-login-input">
                 <i class="fa-solid fa-lock"></i>
                 <input [(ngModel)]="model.password" type="password" id="password" class="input-group mb-3"
                   name="password" required />
               </div>
-                <button [disabled]="loginForm.invalid" class="btn btn-outline-warning text-white" type="submit">
-                  Entrar
-                </button>
+              <button [disabled]="loginForm.invalid" class="btn btn-outline-warning text-white" type="submit">
+                Entrar
+              </button>
               <p class="text-white ms-2 p-3" routerLink="/user/registration">
                 Esqueci minha senha
               </p>

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -19,19 +19,18 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { PerfilComponent } from './components/user/perfil/perfil.component';
-import { NavComponent } from './shared/nav/nav.component';
-import { TituloComponent } from './shared/titulo/titulo.component';
-import { CardBoxComponent } from './shared/card-box/card-box.component';
-import { CardBoxUserComponent } from './shared/card-box-user/card-box-user.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { PerfilComponent } from './views/user/perfil/perfil.component';
+import { NavComponent } from './shared/header/nav.component';
+import { CardBoxComponent } from './components/card-box/card-box.component';
+import { CardBoxUserComponent } from './components/card-box-user/card-box-user.component';
 
 import { AccountService } from './services/account.service';
 
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
-import { UserComponent } from './components/user/user.component';
-import { LoginComponent } from './components/user/login/login.component';
-import { RegistrationComponent } from './components/user/registration/registration.component';
+import { UserComponent } from './views/user/user.component';
+import { LoginComponent } from './views/user/login/login.component';
+import { RegistrationComponent } from './views/user/registration/registration.component';
 
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
@@ -43,7 +42,6 @@ defineLocale('pt-br', ptBrLocale);
     DashboardComponent,
     PerfilComponent,
     NavComponent,
-    TituloComponent,
     DateTimeFormatPipe,
     UserComponent,
     LoginComponent,
@@ -51,7 +49,6 @@ defineLocale('pt-br', ptBrLocale);
     SidebarComponent,
     CardBoxComponent,
     CardBoxUserComponent
-
   ],
   imports: [
     BrowserModule,
@@ -75,7 +72,7 @@ defineLocale('pt-br', ptBrLocale);
   ],
   providers: [
     AccountService,
-    // EventoService,
+    // StationService,
     // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
   ],
   bootstrap: [AppComponent],
