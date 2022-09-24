@@ -5,12 +5,7 @@
   "hints": {
     "typescript-config/consistent-casing": "off",
     "typescript-config/strict": "off",
-    "axe/forms": [
-      "default",
-      {
-        "select-name": "off"
-      }
-    ],
+    "axe/forms": "off",
     "axe/text-alternatives": [
       "default",
       {

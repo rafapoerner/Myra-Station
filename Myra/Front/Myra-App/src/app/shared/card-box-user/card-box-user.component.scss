@@ -1,0 +1,35 @@
+
+.station-user-auth{
+  padding: 1rem 0.5rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+  margin: 0 0 .5rem 0;
+  align-items: center;
+}
+
+.station-user-auth img{
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+  margin: 0 0 .5rem 0;
+}
+
+.station-user-auth h2,
+.station-user-auth p{
+margin: 0;
+padding: 0;
+}
+
+.station-user-auth h2{
+font-size: 1rem;
+font-weight: bold;
+}
+
+.station-user-auth p{
+font-size: 0.8rem;
+opacity: 0.5;
+}
+

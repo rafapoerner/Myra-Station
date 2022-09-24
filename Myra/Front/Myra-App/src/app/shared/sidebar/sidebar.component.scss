@@ -1,103 +1,44 @@
-td, th {
-  vertical-align: middle !important;
-  }
-.left, .right {
-      float:left;
-      height:100vh;
-  }
-
-.left {
-      background: #000;
-      display: inline-block;
-      white-space: nowrap;
-      width: 50px;
-      transition: width 1s ;
-  }
-
-.right {
-      background: #fff;
-      width: 350px;
-      transition: width 1s;
-      border-style:solid;
-      border-color:#ccc;
-      border-width:1px;
-  }
-
-.left:hover {
-      width: 250px;
-  }
-
-.item:hover {
-      background-color:#ccc;
-      }
-
-.left .glyphicon {
-      margin:15px;
-      width:20px;
-      color:#fff;
-  }
-
-.right .glyphicon {
-      color:#a9a9a9;
-  }
-span.glyphicon.glyphicon-refresh{
-  font-size:17px;
-  vertical-align: middle !important;
-  }
-
-.item {
-      height:50px;
-      overflow:hidden;
-      color:#fff;
-  }
-.title {
-      background-color:#eee;
-      border-style:solid;
-      border-color:#ccc;
-      border-width:1px;
-      box-sizing: border-box;
-  }
-.search:hover {
-      border-color:#4aa9fb;
-      border-width:1px;
-  }
-.search {
-  padding:3px 8px 3px !important;
-  }
-input[type=search] {
-  padding: 10px 0px 10px;
-border: 0px solid #fff;
-background: #eee;
--webkit-appearance: none;
-  width:90%;
-  float:none;
+.station-sidebar {
+  width: 250px;
+  height: calc(100vh - (3.2rem + 4px));
+  background: #000;
+  display: flex;
 }
-input[type=search]:focus {
-  outline:none;
-  }
-.type{
-  height: 47px;;
-  }
-.date{
-  background-color:#f7f7f7
-  }
-.docdate {
-  vertical-align:bottom !important;
-  }
-.distr {
-  margin: 0 0 5px;
-  font-size: 12px;
-  }
-.ndoc {
-  margin: 0 0 5px;
-  }
-.storage {
-  margin: 0;
-  color: #aaa !important;
-  font-size: 12px;
-  }
 
+.station-sidebar-menu{
+  width: 3.3rem;
+  display: flex;
+  height: calc(100% - 2rem);
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+}
 
+.station-sidebar-menu div {
+  background-color: #000;
+  pointer-events: all;
+  transition: none;
+  color: #FFFFFF ;
+  font-size: 1.6rem;
+  padding: 0.7rem;
+  text-align: center;
+}
 
+.station-sidebar-menu div {
+  transition: all 0s;
+  cursor: pointer;
+  opacity: 0.5;
+}
 
+.station-sidebar-menu div.active {
+background: #ff9300;
+opacity: 1;
+}
 
+.station-sidebar-menu div:hover {
+opacity: 1;
+}
+
+.station-sidebar-body{
+  background: #F5F5F5;
+  width: 100%;
+}

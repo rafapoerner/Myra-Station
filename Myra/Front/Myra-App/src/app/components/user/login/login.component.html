@@ -1,44 +1,40 @@
-<div class="container-xxl">
+<div class="container-xxl station-login">
   <div class="row">
-    <div class="div1">
-      <div class="row align-items-end">
-        <img class="img2" src="../assets/myra-branco-fix-2.png" alt="" />
-        <div class="col">
-          <div class="a">
-            <h2>station</h2>
-          </div>
-          <small>performance anywhere</small>
+    <div class="station-login-card">
+      <div class="card-img">
+        <img class="station-login-card-img" src="../assets/myra-branco-fix-2.png" alt="" />
+        <div class="station-login-performance">
+          <h1>station</h1>
+          <p>performance anywhere</p>
         </div>
       </div>
       <div class="h1">
-        <h1>
-          perfomance
-          anywhere
-        </h1>
+        <h1>perfomance anywhere</h1>
       </div>
     </div>
-    <div class="div2">
-      <div class="img">
-        <img src="../assets/logo-telaLogin.jpg" alt="" />
-      </div>
+    <div class="station-login-card2">
       <div>
-        <div class="card bg-black position-absolute top-50 start-50 translate-middle" style="width: 18rem">
-          <div class="">
+        <div class="card bg-black position-absolute top-50 start-50 translate-middle login" style="width: 18rem">
+          <div>
             <img src="../assets/myra-branco-logo.png" alt="" />
           </div>
           <div class="card-body">
             <form #loginForm="ngForm" class="form-label" (ngSubmit)="login()">
               <label for="username" class="text-white">Usuário</label>
+              <div class="station-login-input" >
+                <i class="fa-solid fa-user"></i>
               <input [(ngModel)]="model.userName" type="email" name="username" id="username"
-                class="input-group mb-2 fa-solid fa-user" required />
-              <label for="password" class="text-white">Password</label>
-              <input [(ngModel)]="model.password" type="password" id="password" class="input-group mb-3"
-                placeholder="Senha" name="password" required />
-              <div class="d-grid gap-2 col-12">
+                class="input-group mb-2" required />
+                </div>
+              <label for="password" class="text-white">Senha</label>
+              <div class="station-login-input" >
+                <i class="fa-solid fa-lock"></i>
+                <input [(ngModel)]="model.password" type="password" id="password" class="input-group mb-3"
+                  name="password" required />
+              </div>
                 <button [disabled]="loginForm.invalid" class="btn btn-outline-warning text-white" type="submit">
                   Entrar
                 </button>
-              </div>
               <p class="text-white ms-2 p-3" routerLink="/user/registration">
                 Esqueci minha senha
               </p>

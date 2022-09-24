@@ -23,6 +23,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PerfilComponent } from './components/user/perfil/perfil.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { TituloComponent } from './shared/titulo/titulo.component';
+import { CardBoxComponent } from './shared/card-box/card-box.component';
+import { CardBoxUserComponent } from './shared/card-box-user/card-box-user.component';
 
 import { AccountService } from './services/account.service';
 
@@ -46,7 +48,9 @@ defineLocale('pt-br', ptBrLocale);
     UserComponent,
     LoginComponent,
     RegistrationComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardBoxComponent,
+    CardBoxUserComponent
 
   ],
   imports: [
