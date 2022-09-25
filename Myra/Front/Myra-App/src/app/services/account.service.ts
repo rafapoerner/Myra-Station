@@ -12,18 +12,16 @@ export class AccountService {
 
 constructor(private http: HttpClient) { }
 
-  public login(): Observable<User[]> {
+  login(): Observable<User[]> {
     return this.http.get<User[]>(environment.host + environment.login);
   }
 
   logout(): void {
-    localStorage.removeItem('user');
-    this.currentUserSource.next(null);
-    this.currentUserSource.complete();
+    sessionStorage.removeItem('user');
   }
 
-  public setCurrentUser(user: User): void {
-    localStorage.setItem('user', JSON.stringify(user));
+  setCurrentUser(user: User): void {
+    sessionStorage.setItem('user', JSON.stringify(user));
     this.currentUserSource.next(user);
   }
 

@@ -25,6 +25,7 @@ import { LoginComponent } from './views/login/login.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 import { AccountService } from './services/account.service';
+import { AuthGuardService } from './guards/auth-guard.service';
 
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
 
@@ -64,9 +65,9 @@ defineLocale('pt-br', ptBrLocale);
   ],
   providers: [
     AccountService,
-    // StationService,
-    // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+    AuthGuardService,
   ],
+
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

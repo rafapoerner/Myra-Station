@@ -1,5 +1,6 @@
 {
-  "users": [{
+  "users": [
+    {
       "id": 1,
       "name": "Rafa",
       "username": "admin",
@@ -38,7 +39,7 @@
     },
     {
       "image": "user4.jpg",
-      "name": "Juliana",
+      "name": "Julio",
       "office": "Diretora-Geral"
     },
     {
@@ -48,7 +49,7 @@
     },
     {
       "image": "user6.jpg",
-      "name": "Poliana",
+      "name": "Paulo",
       "office": "Diretor"
     },
     {

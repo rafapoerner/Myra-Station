@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from 'src/app/models/identity/Employee';
 import { AccountService } from 'src/app/services/account.service';
 
@@ -9,14 +10,19 @@ import { AccountService } from 'src/app/services/account.service';
 })
 export class SidebarComponent implements OnInit {
 
-  employees = {} as  Employee[];
+  employees: Employee[] = [];
 
-  constructor(private accountService: AccountService) { }
+  constructor(private accountService: AccountService, private router: Router) { }
 
   ngOnInit(): void {
     this.accountService.getEmployees().subscribe(
       response => this.employees = response
     );
+  }
+
+  logout(): void {
+    this.accountService.logout();
+    this.router.navigate(['/login']);
   }
 
 }

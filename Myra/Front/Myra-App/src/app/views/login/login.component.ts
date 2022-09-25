@@ -21,7 +21,11 @@ export class LoginComponent implements OnInit {
     private toastr: ToastrService
   ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    if (sessionStorage.getItem('user')) {
+      this.router.navigate(['/dashboard']);
+    }
+  }
 
   public login(): void {
     this.accountService.login().subscribe(
