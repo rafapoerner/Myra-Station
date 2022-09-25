@@ -1,4 +1,5 @@
-# My Event
+# Myra-Station
+-- Projeto-Desafio --
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/rafapoerner/Events/blob/master/LICENSE) 
 
 # Sobre o projeto
